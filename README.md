@@ -1,7 +1,7 @@
 # MatrixGenerator
 
-MatrixGenerator es una aplicación en Python que te permite crear y editar iconos personalizados en una matriz 8x8. La aplicación consta de dos ventanas: una para visualizar la matriz en formato hexadecimal y otra para editar la matriz de manera visual. Puedes copiar y pegar matrices, y los cambios se reflejan en tiempo real entre ambas ventanas.
-Una vez tienes tu matriz puedes añadirla en tu archivo .c de la NDS de la siguiente manera.
+MatrixGenerator is a Python application that allows you to create and edit custom icons on an 8x8 matrix. The application consists of two windows: one to display the matrix in hexadecimal format and another to edit the matrix visually. You can copy and paste matrices, and changes are reflected in real-time between both windows.
+Once you have your matrix, you can add it to your NDS .c file as follows.
 ```c
 unsigned char ok_face_bitmap[64] = {
     0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00,
@@ -14,27 +14,28 @@ unsigned char ok_face_bitmap[64] = {
     0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00
 };
 ```
-## Características
+## Features
 
-- **Matriz 8x8**: Crea y edita iconos en una cuadrícula de 8x8 píxeles.
-- **Ventana de Matriz Hexadecimal**: Muestra la matriz en formato hexadecimal (`0x00` para negro y `0xFF` para blanco).
-- **Ventana de Matriz Visual**: Edita la matriz haciendo clic en los cuadrados para cambiar entre blanco y negro.
-- **Copiar y Pegar**: Copia la matriz actual al portapapeles o pega una matriz desde el portapapeles.
-- **Actualización en Tiempo Real**: Los cambios en una ventana se reflejan automáticamente en la otra.
+- **8x8 Matrix**: Create and edit icons on an 8x8 pixel grid.
+- **Hexadecimal Matrix Window**: Displays the matrix in hexadecimal format (`0x00` for black and `0xFF` for white).
+- **Visual Matrix Window**: Edit the matrix by clicking on the squares to toggle between black and white.
+- **Copy and Paste**: Copy the current matrix to the clipboard or paste a matrix from the clipboard.
+- **Real-Time Updates**: Changes in one window are automatically reflected in the other.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
-- Biblioteca `tkinter` (incluida en la instalación estándar de Python)
+- `tkinter` library (included in the standard Python installation)
 
-## Instalación
+## Installation
 
-1. Clona este repositorio o descarga el archivo `matrixgenerator.py`.
-2. Asegúrate de tener Python instalado en tu sistema.
+1. Clone this repository or download the `matrixgenerator.py` file.
+2. Make sure you have Python installed on your system.
 
-## Uso
+## Usage
 
-1. Ejecuta la aplicación:
+1. Run the application:
    ```bash
    python matrixgenerator.py
-- **También puedes usar el .exe disponible en las releases de este repositorio.**
+   ```
+- **You can also use the .exe available in the releases of this repository.**
